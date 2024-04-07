@@ -1,0 +1,64 @@
+/* Resetting default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2; /* Light gray background color */
+}
+
+/* Main container styles */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the start of the cross axis */
+    min-height: 100vh; /* Ensure the main container covers the entire viewport */
+    padding: 20px; /* Add some padding for spacing */
+}
+
+/* List section styles */
+#list {
+    background-color: #fff; /* White background color */
+    flex: 1; /* Take up available space */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    padding: 20px; /* Add padding inside the list section */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+/* Form section styles */
+#form {
+    background-color: #ffe6e6; /* Light red background color */
+    flex: 1; /* Take up available space */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Add padding inside the form section */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Form label styles */
+.form-label {
+    font-weight: bold; /* Make labels bold */
+    margin-bottom: 5px; /* Add spacing between labels and inputs */
+}
+
+/* Form input styles */
+.form-control {
+    width: 100%; /* Make inputs fill the entire width of the form */
+    margin-bottom: 15px; /* Add spacing between inputs */
+    padding: 10px; /* Add padding inside inputs */
+    border: 1px solid #ccc; /* Add a light border */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in the input's total width */
+}
+
+/* Form button styles */
+.btn-primary {
+    background-color: #007bff; /* Blue primary color for the button */
+    color: #fff; /* White text color */
+    border: none; /* Remove default button border */ 
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Add padding */
+    cursor: pointer; /* Show pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
