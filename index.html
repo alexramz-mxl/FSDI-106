@@ -9,57 +9,53 @@
     <title>Test</title>
 </head>
 <body>
-    <h1>TASK MANAGER</h1>
-    <main>
-        <section id="list">LIST OF TASK:
+  <h1>TASK MANAGER</h1>
+  <main>
+      <section id="list">
+          <h2>LIST OF TASKS:</h2>
           <div class="pending-task">
-
+              <!-- Tasks will be displayed here -->
           </div>
-        </section>
-        <section id="form">
-         
-                <!--
-                    Title
-                    Description
-                    Color
-                    Start date
-                    Status
-                    Budget
-                -->
-                <div class="mb-3">
-                  <label for="form-label" class="form-label">Title:</label>
-                  <input type="text" class="form-control" id="inputTitle">
-                </div>
-                <div class="mb-3">
-                  <label for="form-label" class="form-label">Description:</label>
+      </section>
+      <section id="form">
+          <form id="taskForm"> <!-- Added form element -->
+              <!-- Title, Description, Color, Start date, Status, Budget -->
+              <div class="mb-3">
+                  <label for="inputTitle" class="form-label">Title:</label>
+                  <input type="text" class="form-control" id="inputTitle" required>
+              </div>
+              <div class="mb-3">
+                  <label for="inputDescription" class="form-label">Description:</label>
                   <textarea rows="3" class="form-control" id="inputDescription"></textarea>
-                </div>
-                <div class="mb-3">
-                  <label class="form-label">Color:</label>
+              </div>
+              <div class="mb-3">
+                  <label for="inputColor" class="form-label">Color:</label>
                   <input type="color" class="form-control" id="inputColor">
-                </div>
-                <div class="mb-3">
-                  <label for="form-label" class="form-label">Start date:</label>
+              </div>
+              <div class="mb-3">
+                  <label for="inputDate" class="form-label">Start date:</label>
                   <input type="datetime-local" class="form-control" id="inputDate">
-                </div>
-                <div class="mb-3">
-                  <label for="form-label" class="form-label">Status:</label>
+              </div>
+              <div class="mb-3">
+                  <label for="inputStatus" class="form-label">Status:</label>
                   <select class="form-control" id="inputStatus">
-                    <option>New</option>
-                    <option>In progress</option>
-                    <option>Completed</option>
-                    <option>Cancelled</option>
+                      <option>New</option>
+                      <option>In progress</option>
+                      <option>Completed</option>
+                      <option>Cancelled</option>
                   </select>
-                </div>
-                <div class="mb-3">
-                  <label for="form-label" class="form-label">Budget:</label>
+              </div>
+              <div class="mb-3">
+                  <label for="inputBudget" class="form-label">Budget:</label>
                   <input type="number" class="form-control" id="inputBudget">
-                </div>
-                
-                <button type="submit" class="btn btn-primary">Submit</button>
-      
-        </section>
-    </main>
+              </div>
+              
+              <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+      </section>
+  </main>
+</body>
+
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     <script src="./scripts/task.js"></script> 
